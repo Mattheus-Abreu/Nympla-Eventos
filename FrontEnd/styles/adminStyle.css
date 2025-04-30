@@ -1,0 +1,300 @@
+body {
+    margin: 0px;
+  }
+  
+  .header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0px 0px 20px 20px;
+      border: #999999 2px solid;
+  }
+  
+  .header_one{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 30px;
+      margin: 10px;
+  }
+  
+  .header_two{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 30px;
+      margin: 10px;
+  }
+  
+    .user{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  
+  
+  .search {
+      --input-line: #000000;
+      --input-text-color: #000000;
+      --input-text-hover-color: #000000;
+      --input-border-color: #5c5c5c;
+      --input-border-hover-color: #999999;
+      --input-bg-color: #ffffff;
+      --search-max-width: 250px;
+      --search-min-width: 150px;
+      --border-radius: 5px;
+      --transition-cubic-bezier: 150ms cubic-bezier(0.4,0,0.2,1);
+    }
+    
+    .search-box {
+      max-width: var(--search-max-width);
+      min-width: var(--search-min-width);
+      height: 35px;
+      border: 1px solid var(--input-border-color);
+      border-radius: var(--border-radius);
+      padding: 5px 15px;
+      background: var(--input-bg-color);
+      transition: var(--transition-cubic-bezier);
+    }
+    
+    .search-box:hover {
+      border-color: var(--input-border-hover-color);
+    }
+   
+    .search-field {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      left: -5px;
+      border: 0;
+    }
+    
+    .input {
+      width: calc(100% - 29px);
+      height: 100%;
+      border: 0;
+      border-color: transparent;
+      font-size: 1rem;
+      padding-right: 0px;
+      color: var(--input-line);
+      background: var(--input-bg-color);
+      border-right: 2px solid var(--input-border-color);
+      outline: none;
+    }
+    
+    .input::-webkit-input-placeholder {
+      color: var(--input-text-color);
+    }
+    
+    .input::-moz-input-placeholder {
+      color: var(--input-text-color);
+    }
+    
+    .input::-ms-input-placeholder {
+      color: var(--input-text-color);
+    }
+    
+    .input:focus::-webkit-input-placeholder {
+      color: var(--input-text-hover-color);
+    }
+    
+    .input:focus::-moz-input-placeholder {
+      color: var(--input-text-hover-color);
+    }
+    
+    .input:focus::-ms-input-placeholder {
+      color: var(--input-text-hover-color);
+    }
+    
+    /*Search button*/
+    .search-box-icon {
+      width: 52px;
+      height: 35px;
+      position: absolute;
+      top: 0px;
+      right: -21px;
+      background: transparent;
+      border-bottom-right-radius: var(--border-radius);
+      border-top-right-radius: var(--border-radius);
+      transition: var(--transition-cubic-bezier);
+    }
+    
+    .search-box-icon:hover {
+      background: var(--input-border-color);
+    }
+    
+    .btn-icon-content {
+      width: 52px;
+      height: 35px;
+      top: -6px;
+      right: -21px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      border-bottom-right-radius: var(--border-radius);
+      border-top-right-radius: var(--border-radius);
+      transition: var(--transition-cubic-bezier);
+      opacity: .4;
+    }
+    
+    .btn-icon-content:hover {
+      opacity: .8;
+    }
+    
+    .search-icon {
+      width: 21px;
+      height: 21px;
+      position: absolute;
+      top: 7px;
+      right: 15px;
+    }
+  
+  .Btn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 45px;
+      height: 45px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition-duration: .3s;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+      background-color: rgb(255, 65, 65);
+    }
+    
+    /* plus sign */
+    .sign {
+      width: 100%;
+      transition-duration: .3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .sign svg {
+      width: 17px;
+    }
+    
+    .sign svg path {
+      fill: white;
+    }
+  
+  
+  .card {
+    max-width: 300px;
+    max-height: 600px;
+    border-radius: 15px;
+    background-color: #fff;
+    flex : 1 1 calc(25% - 20px);
+    border: 3px solid #dddddd;
+  }
+  
+  .card a {
+    text-decoration: none
+  }
+  
+  .content {
+    padding: 20px;
+    
+  }
+  
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(239, 205, 255);
+  }
+  
+  .title {
+    color: #111827;
+    font-size: 1.5rem;
+    font-family: Inter, sans-serif;
+    line-height: 1.75rem;
+    font-weight: 800;
+  }
+  
+  .desc {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .eventCards{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
+      gap: 10px;
+      margin: 30px;
+      
+  }
+  
+  .eventSubscriptions{
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
+      gap: 10px;
+      margin: 30px;
+  }
+  
+      /* Esconde os radio buttons */
+      input[type="radio"] {
+        display: none;
+      }
+  
+      /* Estilo dos botões das abas */
+      .tabs label {
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: #ddd;
+        margin-right: 5px;
+        border-radius: 5px 5px 0 0;
+        display: inline-block;
+      }
+  
+      /* Estilo quando a aba está selecionada */
+      input[type="radio"]:checked + label {
+        background-color: #fff;
+        border-bottom: 2px solid white;
+        font-weight: bold;
+      }
+  
+      /* Conteúdo das abas */
+      .tab-content {
+        display: none;
+        padding: 20px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 0 5px 5px 5px;
+      }
+  
+      #aba1:checked ~ #conteudo1,
+      #aba2:checked ~ #conteudo2 {
+        display: block;
+      }
+  
+  
